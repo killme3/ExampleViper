@@ -9,21 +9,27 @@
 import Foundation
 import UIKit
 
-class HomeRouter: HomePresenterRouterProcotol {
+class HomeRouter: HomePresenterToRouterProcotol {
     static func createModule() -> UIViewController {
-        let view = mainStoryBoard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-        let presenter: HomeViewToPresenterProtocol & HomeInteractorToPresenterProtocol = HomePresenter()
-        var interactor: HomePresenterToInteractorProtocol = HomeInteractor()
-        let router: HomePresenterRouterProcotol = HomeRouter()
         
-        presenter.view = view
-        presenter.router = router
-        presenter.interactor = interactor
+//        let navController = mainStoryBoard.instantiateViewController(withIdentifier: "firstNav")    //option 1
+//        if let view = navController.childViewControllers.first as? HomeViewController {
+            let view = mainStoryBoard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+            var interactor: HomePresenterToInteractorProtocol = HomeInteractor()
+            let presenter: HomeViewToPresenterProtocol & HomeInteractorToPresenterProtocol = HomePresenter()
+            let router: HomePresenterToRouterProcotol = HomeRouter()
+            
+            presenter.view = view
+            presenter.router = router
+            presenter.interactor = interactor
+            
+            view.presenter = presenter
+            interactor.presenter = presenter
+            
+            return view
+//        }
+//        return UIViewController()
         
-        view.presenter = presenter
-        interactor.presenter = presenter
-        
-        return view
     }
     
     static var mainStoryBoard: UIStoryboard {

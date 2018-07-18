@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79ECC156EBFA9451964F8DC7 /* Pods_ExampleVipewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B968DEEA27000B2106FE0C /* Pods_ExampleVipewUITests.framework */; };
+		7B07B05920FC7D6400B86323 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B07B05820FC7D6400B86323 /* SecondViewController.swift */; };
+		7B07B05B20FC7EC300B86323 /* SecondHomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B07B05A20FC7EC300B86323 /* SecondHomeProtocols.swift */; };
+		7B07B05D20FC84BF00B86323 /* SecondInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B07B05C20FC84BF00B86323 /* SecondInteractor.swift */; };
+		7B07B05F20FC870500B86323 /* SecondPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B07B05E20FC870500B86323 /* SecondPresenter.swift */; };
+		7B07B06120FC89C100B86323 /* SecondRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B07B06020FC89C100B86323 /* SecondRouter.swift */; };
+		7B9595F320FDCB050088AEEC /* SecondHomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9595F220FDCB050088AEEC /* SecondHomeTableViewCell.swift */; };
+		7B9595F520FDCF3B0088AEEC /* SecondDataSourceTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9595F420FDCF3B0088AEEC /* SecondDataSourceTableView.swift */; };
+		7B9595FE20FDD5E90088AEEC /* DetailHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9595FD20FDD5E90088AEEC /* DetailHomeViewController.swift */; };
+		7B95960020FDD75E0088AEEC /* DetailHomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9595FF20FDD75E0088AEEC /* DetailHomeProtocols.swift */; };
+		7B95960220FDD8C60088AEEC /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B95960120FDD8C60088AEEC /* DetailRouter.swift */; };
 		7BD38DC920B51398000C6D22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD38DC820B51398000C6D22 /* AppDelegate.swift */; };
 		7BD38DCB20B51398000C6D22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD38DCA20B51398000C6D22 /* ViewController.swift */; };
 		7BD38DCE20B51398000C6D22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BD38DCC20B51398000C6D22 /* Main.storyboard */; };
@@ -15,6 +26,15 @@
 		7BD38DD620B5139B000C6D22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BD38DD420B5139B000C6D22 /* LaunchScreen.storyboard */; };
 		7BD38DE120B5139B000C6D22 /* ExampleVipewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD38DE020B5139B000C6D22 /* ExampleVipewTests.swift */; };
 		7BD38DEC20B5139B000C6D22 /* ExampleVipewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD38DEB20B5139B000C6D22 /* ExampleVipewUITests.swift */; };
+		7BD38E0120B51561000C6D22 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD38E0020B51561000C6D22 /* HomeViewController.swift */; };
+		7BD38E0320B515E9000C6D22 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD38E0220B515E9000C6D22 /* HomeRouter.swift */; };
+		7BD38E0520B5162F000C6D22 /* HomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD38E0420B5162F000C6D22 /* HomeProtocols.swift */; };
+		7BD38E0720B51AA5000C6D22 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD38E0620B51AA5000C6D22 /* HomePresenter.swift */; };
+		7BD38E0B20B54022000C6D22 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD38E0A20B54022000C6D22 /* HomeInteractor.swift */; };
+		7BD38E1020B544D6000C6D22 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD38E0F20B544D6000C6D22 /* Constant.swift */; };
+		7BD38E1220B549C1000C6D22 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD38E1120B549C1000C6D22 /* Contact.swift */; };
+		8A846545E3074FE3F35C649E /* Pods_ExampleVipew.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D63604D29D14B2E9367B9A /* Pods_ExampleVipew.framework */; };
+		D4FC713E4DF92E9776E6E376 /* Pods_ExampleVipewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B0FF2E5C9B9BD14628B45E /* Pods_ExampleVipewTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +55,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BE258086DB0DFC4A8E4002B /* Pods-ExampleVipew.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleVipew.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleVipew/Pods-ExampleVipew.debug.xcconfig"; sourceTree = "<group>"; };
+		14B0FF2E5C9B9BD14628B45E /* Pods_ExampleVipewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleVipewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40B968DEEA27000B2106FE0C /* Pods_ExampleVipewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleVipewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		761EE28D9B1624F539C30841 /* Pods-ExampleVipewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleVipewUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleVipewUITests/Pods-ExampleVipewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7B07B05820FC7D6400B86323 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		7B07B05A20FC7EC300B86323 /* SecondHomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondHomeProtocols.swift; sourceTree = "<group>"; };
+		7B07B05C20FC84BF00B86323 /* SecondInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondInteractor.swift; sourceTree = "<group>"; };
+		7B07B05E20FC870500B86323 /* SecondPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPresenter.swift; sourceTree = "<group>"; };
+		7B07B06020FC89C100B86323 /* SecondRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondRouter.swift; sourceTree = "<group>"; };
+		7B9595F220FDCB050088AEEC /* SecondHomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondHomeTableViewCell.swift; sourceTree = "<group>"; };
+		7B9595F420FDCF3B0088AEEC /* SecondDataSourceTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondDataSourceTableView.swift; sourceTree = "<group>"; };
+		7B9595FD20FDD5E90088AEEC /* DetailHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHomeViewController.swift; sourceTree = "<group>"; };
+		7B9595FF20FDD75E0088AEEC /* DetailHomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHomeProtocols.swift; sourceTree = "<group>"; };
+		7B95960120FDD8C60088AEEC /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
 		7BD38DC520B51398000C6D22 /* ExampleVipew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleVipew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD38DC820B51398000C6D22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BD38DCA20B51398000C6D22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +83,18 @@
 		7BD38DE720B5139B000C6D22 /* ExampleVipewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleVipewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD38DEB20B5139B000C6D22 /* ExampleVipewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleVipewUITests.swift; sourceTree = "<group>"; };
 		7BD38DED20B5139B000C6D22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BD38E0020B51561000C6D22 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7BD38E0220B515E9000C6D22 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		7BD38E0420B5162F000C6D22 /* HomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocols.swift; sourceTree = "<group>"; };
+		7BD38E0620B51AA5000C6D22 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		7BD38E0A20B54022000C6D22 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		7BD38E0F20B544D6000C6D22 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		7BD38E1120B549C1000C6D22 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		88DF6347138EEED5427FCE14 /* Pods-ExampleVipewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleVipewTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleVipewTests/Pods-ExampleVipewTests.release.xcconfig"; sourceTree = "<group>"; };
+		AFB92EA6849A171882202342 /* Pods-ExampleVipew.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleVipew.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleVipew/Pods-ExampleVipew.release.xcconfig"; sourceTree = "<group>"; };
+		CF1BB15AA858959D9C451219 /* Pods-ExampleVipewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleVipewUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleVipewUITests/Pods-ExampleVipewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E2D63604D29D14B2E9367B9A /* Pods_ExampleVipew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleVipew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E72CD427470CA813AB5A8474 /* Pods-ExampleVipewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleVipewTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleVipewTests/Pods-ExampleVipewTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A846545E3074FE3F35C649E /* Pods_ExampleVipew.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4FC713E4DF92E9776E6E376 /* Pods_ExampleVipewTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +118,172 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79ECC156EBFA9451964F8DC7 /* Pods_ExampleVipewUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B07B04E20FC7C3D00B86323 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7B07B05120FC7CD300B86323 /* Protocol */,
+				7BD38DFF20B51430000C6D22 /* View */,
+				7BD38DFD20B5141D000C6D22 /* Interactor */,
+				7BD38DFE20B51425000C6D22 /* Presenter */,
+				7BD38DFB20B513FB000C6D22 /* Entity */,
+				7BD38DFA20B513F2000C6D22 /* Route */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7B07B04F20FC7C5400B86323 /* SecondHome */ = {
+			isa = PBXGroup;
+			children = (
+				7B9595F120FDCAD50088AEEC /* Tableview */,
+				7B07B05220FC7CDD00B86323 /* Protocol */,
+				7B07B05320FC7D0200B86323 /* View */,
+				7B07B05420FC7D0A00B86323 /* Interactor */,
+				7B07B05520FC7D1200B86323 /* Presenter */,
+				7B07B05620FC7D1900B86323 /* Entity */,
+				7B07B05720FC7D2A00B86323 /* Route */,
+			);
+			path = SecondHome;
+			sourceTree = "<group>";
+		};
+		7B07B05020FC7CA700B86323 /* Modul */ = {
+			isa = PBXGroup;
+			children = (
+				7B07B04E20FC7C3D00B86323 /* Home */,
+				7B07B04F20FC7C5400B86323 /* SecondHome */,
+				7B9595F620FDD52D0088AEEC /* Detail Home */,
+			);
+			path = Modul;
+			sourceTree = "<group>";
+		};
+		7B07B05120FC7CD300B86323 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				7BD38E0420B5162F000C6D22 /* HomeProtocols.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		7B07B05220FC7CDD00B86323 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				7B07B05A20FC7EC300B86323 /* SecondHomeProtocols.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		7B07B05320FC7D0200B86323 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7B07B05820FC7D6400B86323 /* SecondViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7B07B05420FC7D0A00B86323 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				7B07B05C20FC84BF00B86323 /* SecondInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		7B07B05520FC7D1200B86323 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7B07B05E20FC870500B86323 /* SecondPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7B07B05620FC7D1900B86323 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		7B07B05720FC7D2A00B86323 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				7B07B06020FC89C100B86323 /* SecondRouter.swift */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		7B9595F120FDCAD50088AEEC /* Tableview */ = {
+			isa = PBXGroup;
+			children = (
+				7B9595F220FDCB050088AEEC /* SecondHomeTableViewCell.swift */,
+				7B9595F420FDCF3B0088AEEC /* SecondDataSourceTableView.swift */,
+			);
+			path = Tableview;
+			sourceTree = "<group>";
+		};
+		7B9595F620FDD52D0088AEEC /* Detail Home */ = {
+			isa = PBXGroup;
+			children = (
+				7B9595F720FDD5840088AEEC /* Protocol */,
+				7B9595F820FDD58F0088AEEC /* View */,
+				7B9595F920FDD5960088AEEC /* Interactor */,
+				7B9595FA20FDD59D0088AEEC /* Presenter */,
+				7B9595FB20FDD5A70088AEEC /* Entity */,
+				7B9595FC20FDD5B20088AEEC /* Route */,
+			);
+			path = "Detail Home";
+			sourceTree = "<group>";
+		};
+		7B9595F720FDD5840088AEEC /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				7B9595FF20FDD75E0088AEEC /* DetailHomeProtocols.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		7B9595F820FDD58F0088AEEC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7B9595FD20FDD5E90088AEEC /* DetailHomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7B9595F920FDD5960088AEEC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		7B9595FA20FDD59D0088AEEC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7B9595FB20FDD5A70088AEEC /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		7B9595FC20FDD5B20088AEEC /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				7B95960120FDD8C60088AEEC /* DetailRouter.swift */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
 		7BD38DBC20B51398000C6D22 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +291,8 @@
 				7BD38DDF20B5139B000C6D22 /* ExampleVipewTests */,
 				7BD38DEA20B5139B000C6D22 /* ExampleVipewUITests */,
 				7BD38DC620B51398000C6D22 /* Products */,
+				A0F8F7F61BAF84B204726742 /* Pods */,
+				93B6D6119829FC5046F4CCA0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +309,8 @@
 		7BD38DC720B51398000C6D22 /* ExampleVipew */ = {
 			isa = PBXGroup;
 			children = (
+				7BD38E0C20B542B4000C6D22 /* Service */,
+				7B07B05020FC7CA700B86323 /* Modul */,
 				7BD38DC820B51398000C6D22 /* AppDelegate.swift */,
 				7BD38DCA20B51398000C6D22 /* ViewController.swift */,
 				7BD38DCC20B51398000C6D22 /* Main.storyboard */,
@@ -128,6 +340,77 @@
 			path = ExampleVipewUITests;
 			sourceTree = "<group>";
 		};
+		7BD38DFA20B513F2000C6D22 /* Route */ = {
+			isa = PBXGroup;
+			children = (
+				7BD38E0220B515E9000C6D22 /* HomeRouter.swift */,
+			);
+			path = Route;
+			sourceTree = "<group>";
+		};
+		7BD38DFB20B513FB000C6D22 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				7BD38E1120B549C1000C6D22 /* Contact.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		7BD38DFD20B5141D000C6D22 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				7BD38E0A20B54022000C6D22 /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		7BD38DFE20B51425000C6D22 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7BD38E0620B51AA5000C6D22 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7BD38DFF20B51430000C6D22 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7BD38E0020B51561000C6D22 /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7BD38E0C20B542B4000C6D22 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7BD38E0F20B544D6000C6D22 /* Constant.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		93B6D6119829FC5046F4CCA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2D63604D29D14B2E9367B9A /* Pods_ExampleVipew.framework */,
+				14B0FF2E5C9B9BD14628B45E /* Pods_ExampleVipewTests.framework */,
+				40B968DEEA27000B2106FE0C /* Pods_ExampleVipewUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0F8F7F61BAF84B204726742 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BE258086DB0DFC4A8E4002B /* Pods-ExampleVipew.debug.xcconfig */,
+				AFB92EA6849A171882202342 /* Pods-ExampleVipew.release.xcconfig */,
+				E72CD427470CA813AB5A8474 /* Pods-ExampleVipewTests.debug.xcconfig */,
+				88DF6347138EEED5427FCE14 /* Pods-ExampleVipewTests.release.xcconfig */,
+				CF1BB15AA858959D9C451219 /* Pods-ExampleVipewUITests.debug.xcconfig */,
+				761EE28D9B1624F539C30841 /* Pods-ExampleVipewUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +418,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BD38DF020B5139B000C6D22 /* Build configuration list for PBXNativeTarget "ExampleVipew" */;
 			buildPhases = (
+				29CCF5D5926F418BE90C8C47 /* [CP] Check Pods Manifest.lock */,
 				7BD38DC120B51398000C6D22 /* Sources */,
 				7BD38DC220B51398000C6D22 /* Frameworks */,
 				7BD38DC320B51398000C6D22 /* Resources */,
+				ECE6CA79B7EB120F2E7288FA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +437,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BD38DF320B5139B000C6D22 /* Build configuration list for PBXNativeTarget "ExampleVipewTests" */;
 			buildPhases = (
+				E4BFB1041172CCF1507F3DD5 /* [CP] Check Pods Manifest.lock */,
 				7BD38DD820B5139B000C6D22 /* Sources */,
 				7BD38DD920B5139B000C6D22 /* Frameworks */,
 				7BD38DDA20B5139B000C6D22 /* Resources */,
@@ -170,6 +456,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7BD38DF620B5139B000C6D22 /* Build configuration list for PBXNativeTarget "ExampleVipewUITests" */;
 			buildPhases = (
+				46C527722216841EC7FA6818 /* [CP] Check Pods Manifest.lock */,
 				7BD38DE320B5139B000C6D22 /* Sources */,
 				7BD38DE420B5139B000C6D22 /* Frameworks */,
 				7BD38DE520B5139B000C6D22 /* Resources */,
@@ -254,14 +541,110 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		29CCF5D5926F418BE90C8C47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExampleVipew-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46C527722216841EC7FA6818 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExampleVipewUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4BFB1041172CCF1507F3DD5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExampleVipewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECE6CA79B7EB120F2E7288FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ExampleVipew/Pods-ExampleVipew-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ExampleVipew/Pods-ExampleVipew-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7BD38DC120B51398000C6D22 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B9595F320FDCB050088AEEC /* SecondHomeTableViewCell.swift in Sources */,
+				7B07B05920FC7D6400B86323 /* SecondViewController.swift in Sources */,
+				7B9595FE20FDD5E90088AEEC /* DetailHomeViewController.swift in Sources */,
+				7BD38E1220B549C1000C6D22 /* Contact.swift in Sources */,
+				7BD38E0720B51AA5000C6D22 /* HomePresenter.swift in Sources */,
+				7B95960220FDD8C60088AEEC /* DetailRouter.swift in Sources */,
+				7B07B05D20FC84BF00B86323 /* SecondInteractor.swift in Sources */,
 				7BD38DCB20B51398000C6D22 /* ViewController.swift in Sources */,
 				7BD38DC920B51398000C6D22 /* AppDelegate.swift in Sources */,
 				7BD38DD120B51398000C6D22 /* ExampleVipew.xcdatamodeld in Sources */,
+				7B07B05B20FC7EC300B86323 /* SecondHomeProtocols.swift in Sources */,
+				7BD38E0120B51561000C6D22 /* HomeViewController.swift in Sources */,
+				7BD38E0B20B54022000C6D22 /* HomeInteractor.swift in Sources */,
+				7B07B06120FC89C100B86323 /* SecondRouter.swift in Sources */,
+				7B95960020FDD75E0088AEEC /* DetailHomeProtocols.swift in Sources */,
+				7B07B05F20FC870500B86323 /* SecondPresenter.swift in Sources */,
+				7BD38E1020B544D6000C6D22 /* Constant.swift in Sources */,
+				7BD38E0520B5162F000C6D22 /* HomeProtocols.swift in Sources */,
+				7B9595F520FDCF3B0088AEEC /* SecondDataSourceTableView.swift in Sources */,
+				7BD38E0320B515E9000C6D22 /* HomeRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,11 +815,13 @@
 		};
 		7BD38DF120B5139B000C6D22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BE258086DB0DFC4A8E4002B /* Pods-ExampleVipew.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJBD2YSBS3;
 				INFOPLIST_FILE = ExampleVipew/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -450,11 +835,13 @@
 		};
 		7BD38DF220B5139B000C6D22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFB92EA6849A171882202342 /* Pods-ExampleVipew.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJBD2YSBS3;
 				INFOPLIST_FILE = ExampleVipew/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,6 +855,7 @@
 		};
 		7BD38DF420B5139B000C6D22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E72CD427470CA813AB5A8474 /* Pods-ExampleVipewTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -489,6 +877,7 @@
 		};
 		7BD38DF520B5139B000C6D22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88DF6347138EEED5427FCE14 /* Pods-ExampleVipewTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +899,7 @@
 		};
 		7BD38DF720B5139B000C6D22 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF1BB15AA858959D9C451219 /* Pods-ExampleVipewUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +920,7 @@
 		};
 		7BD38DF820B5139B000C6D22 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 761EE28D9B1624F539C30841 /* Pods-ExampleVipewUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

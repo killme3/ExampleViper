@@ -9,17 +9,18 @@
 import Foundation
 import UIKit
 
-protocol HomePresenterRouterProcotol: class {
+protocol HomePresenterToRouterProcotol: class {
     static func createModule() -> UIViewController
 }
 
 protocol HomeViewToPresenterProtocol: class {
     var view: HomePresenterToViewProtocol? {get set}
     var interactor: HomePresenterToInteractorProtocol? {get set}
-    var router: HomePresenterRouterProcotol? {get set}
+    var router: HomePresenterToRouterProcotol? {get set}
     
     func updateView()
     func gotoSecondView(nav: UIViewController)
+    func setRootViewController()
 }
 
 protocol HomePresenterToInteractorProtocol {

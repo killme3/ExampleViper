@@ -7,3 +7,27 @@
 //
 
 import Foundation
+import Alamofire
+
+class SecondInteractor: SecondPresenterToInteractorProtocol {
+    var presenter: SecondInteractorToPresenterProtocol?
+    
+    func fetchName() {
+        Alamofire.request(Constants.URL).responseJSON { response in
+            
+            if(response.response?.statusCode == 200){
+                do {
+                    let result = try JSONDecoder().decode(ContactResult.self, from: response.data!)
+                    self.presenter?.secondFetchedName(name: result)
+                } catch let err {
+                    print(err)
+                }
+            }
+            else {
+                self.presenter?.secondFetchedNameFailed()
+            }
+        }
+    }
+    
+    
+}

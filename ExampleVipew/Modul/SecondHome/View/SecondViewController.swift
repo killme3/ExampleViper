@@ -10,26 +10,35 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    var presenter: SecondViewToPresenterProtocol?
+    var contactResult: ContactResult!
+    fileprivate let dataSourceTableView = SecondDataSourceTableView()
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        presenter?.updateView()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
+
+extension SecondViewController: SecondPresenterToViewProtocol {
+    func showName(name: ContactResult) {
+        self.contactResult = name
+        self.dataSourceTableView.secondViewController = self
+        self.dataSourceTableView.setupData()
+    }
+    
+    func showError() {
+        let alert = UIAlertController(title: "Alert", message: "Problem Fetching News", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+}
+

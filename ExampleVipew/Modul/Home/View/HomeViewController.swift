@@ -24,6 +24,10 @@ class HomeViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    @IBAction func secondHomeTapped(_ sender: Any) {
+        presenter?.gotoSecondView(nav: self)
+    }
+    
 }
 
 extension HomeViewController: HomePresenterToViewProtocol {

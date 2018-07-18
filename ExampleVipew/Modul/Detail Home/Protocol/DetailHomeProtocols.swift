@@ -7,3 +7,9 @@
 //
 
 import Foundation
+import UIKit
+
+protocol DetailPresenterRouterProtocol: class {
+    static func createModule(contactResult: Contact) -> UIViewController
+}
+

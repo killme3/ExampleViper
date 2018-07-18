@@ -10,6 +10,16 @@ import UIKit
 
 class SecondHomeTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var labelName: UILabel!
+    @IBOutlet weak var labelEmail: UILabel!
+    
+    var item: Contact? {
+        didSet {
+            labelName?.text = item?.name
+            labelEmail?.text = item?.email
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

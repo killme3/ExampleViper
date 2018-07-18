@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+class Constants{
+    public static let URL = "http://api.androidhive.info/contacts";
+}

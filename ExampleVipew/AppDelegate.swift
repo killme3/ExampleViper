@@ -14,9 +14,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let home = HomeRouter.createModule()
+//        let navHome =  UINavigationController.init(rootViewController: home) //option 1 jika view controller pertama terdapat navigation
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = home
+        window?.makeKeyAndVisible()
+        
         return true
     }
 

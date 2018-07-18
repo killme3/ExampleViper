@@ -19,6 +19,7 @@ protocol SecondViewToPresenterProtocol: class {
     var router: SecondPresenterRouterProtocol? {get set}
     
     func updateView()
+    func gotoDetail(nav: UIViewController, contactResult: Contact)
 }
 
 protocol SecondPresenterToInteractorProtocol {

@@ -10,9 +10,19 @@ import UIKit
 
 class DetailHomeViewController: UIViewController {
 
+    @IBOutlet weak var labelEmail: UILabel!
+    @IBOutlet weak var labelName: UILabel!
+    @IBOutlet weak var labelAddress: UILabel!
+    
+    var item: Contact?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.labelName.text = self.item?.name
+        self.labelEmail.text = self.item?.email
+        self.labelAddress.text = self.item?.address
+        
         // Do any additional setup after loading the view.
     }
 
