@@ -18,6 +18,8 @@
 		7B9595FE20FDD5E90088AEEC /* DetailHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9595FD20FDD5E90088AEEC /* DetailHomeViewController.swift */; };
 		7B95960020FDD75E0088AEEC /* DetailHomeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9595FF20FDD75E0088AEEC /* DetailHomeProtocols.swift */; };
 		7B95960220FDD8C60088AEEC /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B95960120FDD8C60088AEEC /* DetailRouter.swift */; };
+		7B95960420FEFD170088AEEC /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B95960320FEFD170088AEEC /* DetailPresenter.swift */; };
+		7B95960720FF198F0088AEEC /* BaseClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B95960620FF198F0088AEEC /* BaseClass.swift */; };
 		7BD38DC920B51398000C6D22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD38DC820B51398000C6D22 /* AppDelegate.swift */; };
 		7BD38DCB20B51398000C6D22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD38DCA20B51398000C6D22 /* ViewController.swift */; };
 		7BD38DCE20B51398000C6D22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BD38DCC20B51398000C6D22 /* Main.storyboard */; };
@@ -69,6 +71,8 @@
 		7B9595FD20FDD5E90088AEEC /* DetailHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHomeViewController.swift; sourceTree = "<group>"; };
 		7B9595FF20FDD75E0088AEEC /* DetailHomeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHomeProtocols.swift; sourceTree = "<group>"; };
 		7B95960120FDD8C60088AEEC /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		7B95960320FEFD170088AEEC /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		7B95960620FF198F0088AEEC /* BaseClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseClass.swift; sourceTree = "<group>"; };
 		7BD38DC520B51398000C6D22 /* ExampleVipew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleVipew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD38DC820B51398000C6D22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BD38DCA20B51398000C6D22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -265,6 +269,7 @@
 		7B9595FA20FDD59D0088AEEC /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				7B95960320FEFD170088AEEC /* DetailPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -282,6 +287,14 @@
 				7B95960120FDD8C60088AEEC /* DetailRouter.swift */,
 			);
 			path = Route;
+			sourceTree = "<group>";
+		};
+		7B95960520FF197B0088AEEC /* Base Class */ = {
+			isa = PBXGroup;
+			children = (
+				7B95960620FF198F0088AEEC /* BaseClass.swift */,
+			);
+			path = "Base Class";
 			sourceTree = "<group>";
 		};
 		7BD38DBC20B51398000C6D22 = {
@@ -309,6 +322,7 @@
 		7BD38DC720B51398000C6D22 /* ExampleVipew */ = {
 			isa = PBXGroup;
 			children = (
+				7B95960520FF197B0088AEEC /* Base Class */,
 				7BD38E0C20B542B4000C6D22 /* Service */,
 				7B07B05020FC7CA700B86323 /* Modul */,
 				7BD38DC820B51398000C6D22 /* AppDelegate.swift */,
@@ -632,11 +646,13 @@
 				7B9595FE20FDD5E90088AEEC /* DetailHomeViewController.swift in Sources */,
 				7BD38E1220B549C1000C6D22 /* Contact.swift in Sources */,
 				7BD38E0720B51AA5000C6D22 /* HomePresenter.swift in Sources */,
+				7B95960420FEFD170088AEEC /* DetailPresenter.swift in Sources */,
 				7B95960220FDD8C60088AEEC /* DetailRouter.swift in Sources */,
 				7B07B05D20FC84BF00B86323 /* SecondInteractor.swift in Sources */,
 				7BD38DCB20B51398000C6D22 /* ViewController.swift in Sources */,
 				7BD38DC920B51398000C6D22 /* AppDelegate.swift in Sources */,
 				7BD38DD120B51398000C6D22 /* ExampleVipew.xcdatamodeld in Sources */,
+				7B95960720FF198F0088AEEC /* BaseClass.swift in Sources */,
 				7B07B05B20FC7EC300B86323 /* SecondHomeProtocols.swift in Sources */,
 				7BD38E0120B51561000C6D22 /* HomeViewController.swift in Sources */,
 				7BD38E0B20B54022000C6D22 /* HomeInteractor.swift in Sources */,
@@ -824,7 +840,10 @@
 				DEVELOPMENT_TEAM = UJBD2YSBS3;
 				INFOPLIST_FILE = ExampleVipew/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.icon.ExampleVipew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -841,7 +860,10 @@
 				DEVELOPMENT_TEAM = UJBD2YSBS3;
 				INFOPLIST_FILE = ExampleVipew/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.icon.ExampleVipew;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -858,7 +880,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJBD2YSBS3;
 				INFOPLIST_FILE = ExampleVipewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.icon.ExampleVipewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -876,7 +902,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJBD2YSBS3;
 				INFOPLIST_FILE = ExampleVipewTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.icon.ExampleVipewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -893,7 +923,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJBD2YSBS3;
 				INFOPLIST_FILE = ExampleVipewUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.icon.ExampleVipewUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -910,7 +944,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UJBD2YSBS3;
 				INFOPLIST_FILE = ExampleVipewUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.icon.ExampleVipewUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

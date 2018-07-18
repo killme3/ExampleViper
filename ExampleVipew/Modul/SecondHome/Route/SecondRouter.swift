@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class SecondRouter: SecondPresenterRouterProtocol {
+class SecondRouter: BaseClass, SecondPresenterRouterProtocol {
     static func createModule() -> UIViewController {
         let view = mainStoryBoard.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
         var interactor: SecondPresenterToInteractorProtocol = SecondInteractor()
@@ -26,7 +26,4 @@ class SecondRouter: SecondPresenterRouterProtocol {
         return view
     }
     
-    static var mainStoryBoard: UIStoryboard {
-        return UIStoryboard(name: "Main", bundle: Bundle.main)
-    }
 }

@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class HomeRouter: HomePresenterToRouterProcotol {
+class HomeRouter: BaseClass, HomePresenterToRouterProcotol {
     static func createModule() -> UIViewController {
         
 //        let navController = mainStoryBoard.instantiateViewController(withIdentifier: "firstNav")    //option 1
@@ -18,7 +18,7 @@ class HomeRouter: HomePresenterToRouterProcotol {
             var interactor: HomePresenterToInteractorProtocol = HomeInteractor()
             let presenter: HomeViewToPresenterProtocol & HomeInteractorToPresenterProtocol = HomePresenter()
             let router: HomePresenterToRouterProcotol = HomeRouter()
-            
+        
             presenter.view = view
             presenter.router = router
             presenter.interactor = interactor
@@ -30,10 +30,6 @@ class HomeRouter: HomePresenterToRouterProcotol {
 //        }
 //        return UIViewController()
         
-    }
-    
-    static var mainStoryBoard: UIStoryboard {
-        return UIStoryboard(name: "Main", bundle: Bundle.main)
     }
     
 }
