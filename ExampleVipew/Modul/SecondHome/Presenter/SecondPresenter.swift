@@ -23,6 +23,10 @@ class SecondPresenter:SecondViewToPresenterProtocol {
         let detailController = DetailRouter.createModule(contactResult: contactResult)
         nav.navigationController?.pushViewController(detailController, animated: true)
     }
+    
+    func dismissView(nav: UIViewController) {
+        nav.dismiss(animated: true, completion: nil)
+    }
 }
 
 extension SecondPresenter: SecondInteractorToPresenterProtocol {

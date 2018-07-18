@@ -21,6 +21,10 @@ class SecondViewController: UIViewController {
         presenter?.updateView()
     }
 
+    @IBAction func dismissTapped(_ sender: Any) {
+        presenter?.dismissView(nav: self)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

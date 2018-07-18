@@ -69,7 +69,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4654" y="134"/>
+            <point key="canvasLocation" x="4746" y="134"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="Lai-FE-yzN">
@@ -80,7 +80,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="k3H-Nm-MIS">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="listCell" rowHeight="76" id="j7a-VP-z66" customClass="SecondHomeTableViewCell" customModule="ExampleVipew" customModuleProvider="target">
@@ -129,14 +129,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Byj-32-Gwa"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ERk-wd-lzM"/>
+                    <navigationItem key="navigationItem" id="ERk-wd-lzM">
+                        <barButtonItem key="rightBarButtonItem" title="Dismiss" id="XF9-Jk-Rbc">
+                            <connections>
+                                <action selector="dismissTapped:" destination="BEG-hR-TOy" id="69m-YK-Nl0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="k3H-Nm-MIS" id="gDL-vh-8id"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oar-uy-jca" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6245.6000000000004" y="133.5832083958021"/>
+            <point key="canvasLocation" x="5482" y="134"/>
         </scene>
         <!--Detail Home View Controller-->
         <scene sceneID="vFe-xL-UkQ">
@@ -184,25 +190,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ony-3V-ykg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7372" y="134"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="16o-hS-YMB">
-            <objects>
-                <navigationController storyboardIdentifier="secondNav" automaticallyAdjustsScrollViewInsets="NO" id="MQZ-2G-Tmv" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fuN-PB-ZZw">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BEG-hR-TOy" kind="relationship" relationship="rootViewController" id="5fq-6i-QmZ"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dqz-Et-X2R" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5522" y="134"/>
+            <point key="canvasLocation" x="6191" y="134"/>
         </scene>
     </scenes>
 </document>

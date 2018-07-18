@@ -8,13 +8,15 @@
 
 import Foundation
 import Alamofire
+import PKHUD
 
 class SecondInteractor: SecondPresenterToInteractorProtocol {
     var presenter: SecondInteractorToPresenterProtocol?
     
     func fetchName() {
+        HUD.show(.progress)
         Alamofire.request(Constants.URL).responseJSON { response in
-            
+            HUD.hide()
             if(response.response?.statusCode == 200){
                 do {
                     let result = try JSONDecoder().decode(ContactResult.self, from: response.data!)

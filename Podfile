@@ -8,6 +8,7 @@ target 'ExampleVipew' do
   # Pods for ExampleVipew
   
   pod 'Moya', '~> 11.0'
+  pod 'PKHUD', '~> 5.0'
 
   target 'ExampleVipewTests' do
     inherit! :search_paths

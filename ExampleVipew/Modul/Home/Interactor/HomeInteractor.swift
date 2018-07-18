@@ -8,14 +8,17 @@
 
 import Foundation
 import Alamofire
+import PKHUD
 
 class HomeInteractor: HomePresenterToInteractorProtocol {
     var presenter: HomeInteractorToPresenterProtocol?
     
     func fetchHome() {
+        
         Alamofire.request(Constants.URL).responseJSON { response in
-            
+            HUD.show(.progress)
             if(response.response?.statusCode == 200){
+                HUD.hide()
                 do {
                     let commentResult = try JSONDecoder().decode(ContactResult.self, from: response.data!)
                     self.presenter?.homeFetched(news: commentResult)

@@ -20,6 +20,7 @@ protocol SecondViewToPresenterProtocol: class {
     
     func updateView()
     func gotoDetail(nav: UIViewController, contactResult: Contact)
+    func dismissView(nav: UIViewController)
 }
 
 protocol SecondPresenterToInteractorProtocol {

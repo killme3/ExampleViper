@@ -19,16 +19,19 @@ class HomePresenter: HomeViewToPresenterProtocol {
     }
     
     func gotoSecondView(nav: UIViewController) {
-//        let secondController = SecondRouter.createModule()
-//        nav.navigationController?.pushViewController(secondController, animated: true)             //option 1
+        let secondController = SecondRouter.createModule()
         
-        setRootViewController()
+//        nav.navigationController?.pushViewController(secondController, animated: true) // option 1 first embed navigation controller in home controller
+//        setRootViewController()   // option 2 set root view controller
+        let secondNav = UINavigationController(rootViewController: secondController)    // option 3 present navigation
+        nav.present(secondNav, animated: true, completion: nil)
+        
     }
     
     func setRootViewController() {
         let secondController = SecondRouter.createModule()
         let appdelegate = UIApplication.shared.delegate as! AppDelegate
-        let secondNav = UINavigationController(rootViewController: secondController)
+        let secondNav = UINavigationController(rootViewController: secondController)        
         appdelegate.window!.rootViewController = secondNav
     }
     
