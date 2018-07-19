@@ -30,12 +30,16 @@ class SecondPresenter:SecondViewToPresenterProtocol {
 }
 
 extension SecondPresenter: SecondInteractorToPresenterProtocol {
+    func secondViewLoading() {
+        view?.hideHud()
+    }
+    
     func secondFetchedName(name: ContactResult) {
         view?.showName(name: name)
     }
     
-    func secondFetchedNameFailed() {
-        view?.showError()
+    func secondFetchedNameFailed(errorName: String ,statusCode: Int) {
+        view?.showError(errorName: errorName ,statusCode: statusCode)
     }
     
 }

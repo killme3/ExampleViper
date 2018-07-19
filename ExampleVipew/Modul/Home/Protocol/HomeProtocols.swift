@@ -30,12 +30,14 @@ protocol HomePresenterToInteractorProtocol {
 
 protocol HomeInteractorToPresenterProtocol: class {
     func homeFetched(news: ContactResult)
-    func homeFetchedFailed()
+    func homeFetchedFailed(errorName: String ,statusCode: Int)
+    func homeViewLoading()
 }
 
 protocol HomePresenterToViewProtocol {
     func showNews(news: ContactResult)
-    func showError()
+    func showError(errorName: String, statusCode: Int)
+    func hideHud()
 }
 
 

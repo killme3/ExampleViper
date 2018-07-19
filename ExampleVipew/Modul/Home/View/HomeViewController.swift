@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import PKHUD
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseClass {
     
     var presenter: HomeViewToPresenterProtocol?
 
@@ -17,9 +18,15 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter?.updateView()
+        if Connectivity.isConnectedToInternet() {
+            HUD.show(.progress, onView: self.view)
+            presenter?.updateView()
+        } else {
+            showAlert(errorName: StringError.NO_INTERNET.rawValue, statusCode: 0)
+        }
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -31,16 +38,17 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController: HomePresenterToViewProtocol {
+    func hideHud() {
+        HUD.hide()
+    }
+    
     func showNews(news: ContactResult) {
         lblTitle.text = news.contact[0].name
         lblDescription.text = news.contact[0].address
     }
     
-    func showError() {
-        let alert = UIAlertController(title: "Alert", message: "Problem Fetching News", preferredStyle: UIAlertControllerStyle.alert)
-        alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
+    func showError(errorName: String, statusCode: Int) {
+        showAlert(errorName: errorName, statusCode: statusCode)
     }
-    
     
 }

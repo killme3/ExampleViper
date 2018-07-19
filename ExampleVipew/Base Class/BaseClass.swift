@@ -15,4 +15,20 @@ class BaseClass: UIViewController {
         return UIStoryboard(name: "Main", bundle: Bundle.main)
     }
     
+    func showEmptyView(emptyView: EmptyView) {
+        emptyView.isHidden = false
+        self.view.bringSubview(toFront: emptyView)
+    }
+    
+    func hideEmptyView(emptyView: EmptyView) {
+        emptyView.isHidden = true
+        self.view.sendSubview(toBack: emptyView)
+    }
+    
+    func showAlert(errorName: String, statusCode: Int) {
+        let alert = UIAlertController(title: "Alert", message: "Problem, \(errorName), status code: \(statusCode)", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
 }

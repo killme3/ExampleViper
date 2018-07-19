@@ -8,27 +8,25 @@
 
 import Foundation
 import Alamofire
-import PKHUD
 
-class HomeInteractor: HomePresenterToInteractorProtocol {
+class HomeInteractor: DebugError ,HomePresenterToInteractorProtocol {
     var presenter: HomeInteractorToPresenterProtocol?
     
-    func fetchHome() {
-        
+    func fetchHome() {        
         Alamofire.request(Constants.URL).responseJSON { response in
-            HUD.show(.progress)
-            if(response.response?.statusCode == 200){
-                HUD.hide()
-                do {
-                    let commentResult = try JSONDecoder().decode(ContactResult.self, from: response.data!)
-                    self.presenter?.homeFetched(news: commentResult)
-                } catch let err {
-                    print(err)
+            switch response.result {
+                case .success:
+                    do {
+                        let commentResult = try JSONDecoder().decode(ContactResult.self, from: response.data!)
+                        self.presenter?.homeFetched(news: commentResult)
+                    } catch let err {
+                        print(err)
                 }
+                case .failure(let error):
+                    self.debug(error: error, statusCode: response.response?.statusCode as Any)
+                    self.presenter?.homeFetchedFailed(errorName: error.localizedDescription, statusCode: response.response?.statusCode ?? 0)
             }
-            else {
-                self.presenter?.homeFetchedFailed()
-            }
+            self.presenter?.homeViewLoading()
         }
     }
     

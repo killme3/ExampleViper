@@ -30,10 +30,12 @@ protocol SecondPresenterToInteractorProtocol {
 
 protocol SecondInteractorToPresenterProtocol: class {
     func secondFetchedName(name: ContactResult)
-    func secondFetchedNameFailed()
+    func secondFetchedNameFailed(errorName: String ,statusCode: Int)
+    func secondViewLoading()
 }
 
 protocol SecondPresenterToViewProtocol {
     func showName(name: ContactResult)
-    func showError()
+    func showError(errorName: String ,statusCode: Int)
+    func hideHud()
 }

@@ -31,19 +31,23 @@ class HomePresenter: HomeViewToPresenterProtocol {
     func setRootViewController() {
         let secondController = SecondRouter.createModule()
         let appdelegate = UIApplication.shared.delegate as! AppDelegate
-        let secondNav = UINavigationController(rootViewController: secondController)        
+        let secondNav = UINavigationController(rootViewController: secondController)
         appdelegate.window!.rootViewController = secondNav
     }
     
 }
 
 extension HomePresenter: HomeInteractorToPresenterProtocol {
+   func homeViewLoading() {
+        view?.hideHud()
+    }
+    
     func homeFetched(news: ContactResult) {
         view?.showNews(news: news)
     }
     
-    func homeFetchedFailed() {
-        view?.showError()
+    func homeFetchedFailed(errorName: String, statusCode: Int) {
+        view?.showError(errorName: errorName, statusCode: statusCode)
     }
     
 }
