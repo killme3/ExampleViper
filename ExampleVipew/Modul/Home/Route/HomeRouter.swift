@@ -14,7 +14,7 @@ class HomeRouter: BaseClass, HomePresenterToRouterProcotol {
         
 //        let navController = mainStoryBoard.instantiateViewController(withIdentifier: "firstNav")    //option 1 first embed navigation controller in home controller
 //        if let view = navController.childViewControllers.first as? HomeViewController {
-            let view = mainStoryBoard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+            let view = mainStoryBoard(storyName: "Main").instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
             var interactor: HomePresenterToInteractorProtocol = HomeInteractor()
             let presenter: HomeViewToPresenterProtocol & HomeInteractorToPresenterProtocol = HomePresenter()
             let router: HomePresenterToRouterProcotol = HomeRouter()

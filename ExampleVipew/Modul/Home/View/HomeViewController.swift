@@ -35,6 +35,10 @@ class HomeViewController: BaseClass {
         presenter?.gotoSecondView(nav: self)
     }
     
+    
+    @IBAction func btnProfileTapped(_ sender: Any) {
+        presenter?.gotoProfile(nav: self)
+    }
 }
 
 extension HomeViewController: HomePresenterToViewProtocol {

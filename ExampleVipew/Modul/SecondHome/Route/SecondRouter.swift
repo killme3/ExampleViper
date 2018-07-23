@@ -11,7 +11,7 @@ import UIKit
 
 class SecondRouter: BaseClass, SecondPresenterRouterProtocol {
     static func createModule() -> UIViewController {
-        let view = mainStoryBoard.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+        let view = mainStoryBoard(storyName: "Main").instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
         var interactor: SecondPresenterToInteractorProtocol = SecondInteractor()
         let presenter: SecondViewToPresenterProtocol & SecondInteractorToPresenterProtocol = SecondPresenter()
         let router: SecondPresenterRouterProtocol = SecondRouter()

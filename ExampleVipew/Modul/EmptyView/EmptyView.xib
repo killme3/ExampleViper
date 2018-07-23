@@ -12,6 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmptyView" customModule="ExampleVipew" customModuleProvider="target">
             <connections>
+                <outlet property="btnRetry" destination="txl-aG-1Q1" id="GvL-le-Wgc"/>
+                <outlet property="lblEmptyView" destination="1cv-hC-KEE" id="0a5-Ba-Bph"/>
                 <outlet property="view" destination="iN0-l3-epB" id="fbi-IO-ymo"/>
             </connections>
         </placeholder>
@@ -27,18 +29,26 @@
                         <constraint firstAttribute="height" constant="120" id="ayu-JX-G6u"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No data .." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cv-hC-KEE">
-                    <rect key="frame" x="150" y="369" width="75.5" height="21"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No data .." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1cv-hC-KEE">
+                    <rect key="frame" x="10" y="369" width="355" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txl-aG-1Q1">
+                    <rect key="frame" x="168.5" y="409.5" width="37" height="30"/>
+                    <state key="normal" title="Retry"/>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="1cv-hC-KEE" firstAttribute="centerX" secondItem="I50-CU-K0d" secondAttribute="centerX" id="45q-Ci-vSK"/>
                 <constraint firstItem="I50-CU-K0d" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" constant="-60" id="4Po-ZM-5gY"/>
                 <constraint firstItem="1cv-hC-KEE" firstAttribute="top" secondItem="I50-CU-K0d" secondAttribute="bottom" constant="25.5" id="4ZG-TC-sHB"/>
+                <constraint firstItem="1cv-hC-KEE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="9AP-Cu-fqL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1cv-hC-KEE" secondAttribute="trailing" constant="10" id="9FR-iK-yyn"/>
+                <constraint firstItem="txl-aG-1Q1" firstAttribute="centerX" secondItem="1cv-hC-KEE" secondAttribute="centerX" id="AUw-jg-2f3"/>
+                <constraint firstItem="txl-aG-1Q1" firstAttribute="top" secondItem="1cv-hC-KEE" secondAttribute="bottom" constant="20" id="DYG-nV-eQH"/>
                 <constraint firstItem="I50-CU-K0d" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Fcp-KC-4gf"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

@@ -28,6 +28,12 @@ class HomePresenter: HomeViewToPresenterProtocol {
         
     }
     
+    func gotoProfile(nav: UIViewController) {
+        let profileController = ProfilePresenterToRouter.createModule()
+        let secondNav = UINavigationController(rootViewController: profileController)
+        nav.present(secondNav, animated: true, completion: nil)
+    }
+    
     func setRootViewController() {
         let secondController = SecondRouter.createModule()
         let appdelegate = UIApplication.shared.delegate as! AppDelegate

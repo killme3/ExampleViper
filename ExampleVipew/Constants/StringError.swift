@@ -9,5 +9,5 @@
 import Foundation
 
 enum StringError: String {
-    case NO_INTERNET = "No internet connection "
+    case NO_INTERNET = "No internet connection :( "
 }

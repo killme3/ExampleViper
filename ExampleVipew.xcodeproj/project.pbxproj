@@ -25,6 +25,14 @@
 		7B95960E210050020088AEEC /* StringError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B95960D210050020088AEEC /* StringError.swift */; };
 		7B95961521006FCA0088AEEC /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B95961421006FCA0088AEEC /* EmptyView.swift */; };
 		7B95962021008B2B0088AEEC /* EmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B95961F21008B2B0088AEEC /* EmptyView.xib */; };
+		7B95962321018A150088AEEC /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B95962221018A150088AEEC /* UIViewController+Extension.swift */; };
+		7B95974D210570880088AEEC /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B959747210570880088AEEC /* ProfilePresenter.swift */; };
+		7B95974E210570880088AEEC /* ProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B959748210570880088AEEC /* ProfileRouter.swift */; };
+		7B95974F210570880088AEEC /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B959749210570880088AEEC /* ProfileViewController.swift */; };
+		7B959750210570880088AEEC /* ProfileProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B95974A210570880088AEEC /* ProfileProtocols.swift */; };
+		7B959751210570880088AEEC /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B95974B210570880088AEEC /* ProfileInteractor.swift */; };
+		7B959752210570880088AEEC /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7B95974C210570880088AEEC /* ProfileViewController.xib */; };
+		7B95975521058F520088AEEC /* Other.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B95975421058F520088AEEC /* Other.storyboard */; };
 		7BD38DC920B51398000C6D22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD38DC820B51398000C6D22 /* AppDelegate.swift */; };
 		7BD38DCB20B51398000C6D22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD38DCA20B51398000C6D22 /* ViewController.swift */; };
 		7BD38DCE20B51398000C6D22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BD38DCC20B51398000C6D22 /* Main.storyboard */; };
@@ -83,6 +91,14 @@
 		7B95960D210050020088AEEC /* StringError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringError.swift; sourceTree = "<group>"; };
 		7B95961421006FCA0088AEEC /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		7B95961F21008B2B0088AEEC /* EmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyView.xib; sourceTree = "<group>"; };
+		7B95962221018A150088AEEC /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		7B959747210570880088AEEC /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		7B959748210570880088AEEC /* ProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileRouter.swift; sourceTree = "<group>"; };
+		7B959749210570880088AEEC /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		7B95974A210570880088AEEC /* ProfileProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileProtocols.swift; sourceTree = "<group>"; };
+		7B95974B210570880088AEEC /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
+		7B95974C210570880088AEEC /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		7B95975421058F520088AEEC /* Other.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Other.storyboard; sourceTree = "<group>"; };
 		7BD38DC520B51398000C6D22 /* ExampleVipew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleVipew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD38DC820B51398000C6D22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BD38DCA20B51398000C6D22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +185,7 @@
 		7B07B05020FC7CA700B86323 /* Modul */ = {
 			isa = PBXGroup;
 			children = (
+				7B959746210570710088AEEC /* Profile */,
 				7B95961321006FA40088AEEC /* EmptyView */,
 				7B07B04E20FC7C3D00B86323 /* Home */,
 				7B07B04F20FC7C5400B86323 /* SecondHome */,
@@ -341,6 +358,27 @@
 			path = EmptyView;
 			sourceTree = "<group>";
 		};
+		7B959621210189F20088AEEC /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7B95962221018A150088AEEC /* UIViewController+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		7B959746210570710088AEEC /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				7B959747210570880088AEEC /* ProfilePresenter.swift */,
+				7B959748210570880088AEEC /* ProfileRouter.swift */,
+				7B959749210570880088AEEC /* ProfileViewController.swift */,
+				7B95974A210570880088AEEC /* ProfileProtocols.swift */,
+				7B95974B210570880088AEEC /* ProfileInteractor.swift */,
+				7B95974C210570880088AEEC /* ProfileViewController.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		7BD38DBC20B51398000C6D22 = {
 			isa = PBXGroup;
 			children = (
@@ -366,6 +404,7 @@
 		7BD38DC720B51398000C6D22 /* ExampleVipew */ = {
 			isa = PBXGroup;
 			children = (
+				7B959621210189F20088AEEC /* Extension */,
 				7B9596102100533A0088AEEC /* Helper */,
 				7B95960F210051480088AEEC /* Constants */,
 				7B959608210036C00088AEEC /* Debug Error */,
@@ -375,6 +414,7 @@
 				7BD38DC820B51398000C6D22 /* AppDelegate.swift */,
 				7BD38DCA20B51398000C6D22 /* ViewController.swift */,
 				7BD38DCC20B51398000C6D22 /* Main.storyboard */,
+				7B95975421058F520088AEEC /* Other.storyboard */,
 				7BD38DD220B5139B000C6D22 /* Assets.xcassets */,
 				7BD38DD420B5139B000C6D22 /* LaunchScreen.storyboard */,
 				7BD38DD720B5139B000C6D22 /* Info.plist */,
@@ -580,10 +620,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B959752210570880088AEEC /* ProfileViewController.xib in Resources */,
 				7B95962021008B2B0088AEEC /* EmptyView.xib in Resources */,
 				7BD38DD620B5139B000C6D22 /* LaunchScreen.storyboard in Resources */,
 				7BD38DD320B5139B000C6D22 /* Assets.xcassets in Resources */,
 				7BD38DCE20B51398000C6D22 /* Main.storyboard in Resources */,
+				7B95975521058F520088AEEC /* Other.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,6 +731,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B95962321018A150088AEEC /* UIViewController+Extension.swift in Sources */,
 				7B95960A210036EE0088AEEC /* DebugError.swift in Sources */,
 				7B9595F320FDCB050088AEEC /* SecondHomeTableViewCell.swift in Sources */,
 				7B07B05920FC7D6400B86323 /* SecondViewController.swift in Sources */,
@@ -696,6 +739,8 @@
 				7BD38E1220B549C1000C6D22 /* Contact.swift in Sources */,
 				7B95960E210050020088AEEC /* StringError.swift in Sources */,
 				7BD38E0720B51AA5000C6D22 /* HomePresenter.swift in Sources */,
+				7B959751210570880088AEEC /* ProfileInteractor.swift in Sources */,
+				7B95974D210570880088AEEC /* ProfilePresenter.swift in Sources */,
 				7B95960420FEFD170088AEEC /* DetailPresenter.swift in Sources */,
 				7B95960220FDD8C60088AEEC /* DetailRouter.swift in Sources */,
 				7B07B05D20FC84BF00B86323 /* SecondInteractor.swift in Sources */,
@@ -708,12 +753,15 @@
 				7BD38E0120B51561000C6D22 /* HomeViewController.swift in Sources */,
 				7BD38E0B20B54022000C6D22 /* HomeInteractor.swift in Sources */,
 				7B07B06120FC89C100B86323 /* SecondRouter.swift in Sources */,
+				7B95974E210570880088AEEC /* ProfileRouter.swift in Sources */,
 				7B95960020FDD75E0088AEEC /* DetailHomeProtocols.swift in Sources */,
 				7B07B05F20FC870500B86323 /* SecondPresenter.swift in Sources */,
 				7BD38E1020B544D6000C6D22 /* Constant.swift in Sources */,
 				7B95960C21004EE00088AEEC /* Connectivity.swift in Sources */,
 				7BD38E0520B5162F000C6D22 /* HomeProtocols.swift in Sources */,
 				7B9595F520FDCF3B0088AEEC /* SecondDataSourceTableView.swift in Sources */,
+				7B959750210570880088AEEC /* ProfileProtocols.swift in Sources */,
+				7B95974F210570880088AEEC /* ProfileViewController.swift in Sources */,
 				7BD38E0320B515E9000C6D22 /* HomeRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

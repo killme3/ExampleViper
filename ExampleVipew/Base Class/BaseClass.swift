@@ -11,11 +11,12 @@ import UIKit
 
 class BaseClass: UIViewController {
     
-    static var mainStoryBoard: UIStoryboard {
-        return UIStoryboard(name: "Main", bundle: Bundle.main)
+    static func mainStoryBoard(storyName: String) -> UIStoryboard {
+        return UIStoryboard(name: storyName, bundle: Bundle.main)
     }
     
-    func showEmptyView(emptyView: EmptyView) {
+    func showEmptyView(errorName: String, emptyView: EmptyView) {
+        emptyView.lblEmptyView.text = errorName
         emptyView.isHidden = false
         self.view.bringSubview(toFront: emptyView)
     }

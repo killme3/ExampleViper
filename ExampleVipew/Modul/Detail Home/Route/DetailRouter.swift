@@ -11,7 +11,7 @@ import UIKit
 
 class DetailRouter: BaseClass, DetailPresenterRouterProtocol {
     static func createModule(contactResult: Contact) -> UIViewController {
-        let view = mainStoryBoard.instantiateViewController(withIdentifier: "DetailHomeViewController") as! DetailHomeViewController
+        let view = mainStoryBoard(storyName: "Main").instantiateViewController(withIdentifier: "DetailHomeViewController") as! DetailHomeViewController
         
         let presenter: DetailViewToPresenterProtocol = DetailPresenter()
         presenter.view = view

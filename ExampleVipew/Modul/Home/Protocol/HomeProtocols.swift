@@ -20,7 +20,14 @@ protocol HomeViewToPresenterProtocol: class {
     
     func updateView()
     func gotoSecondView(nav: UIViewController)
+    func gotoProfile(nav: UIViewController)
     func setRootViewController()
+}
+
+protocol HomePresenterToViewProtocol {
+    func showNews(news: ContactResult)
+    func showError(errorName: String, statusCode: Int)
+    func hideHud()
 }
 
 protocol HomePresenterToInteractorProtocol {
@@ -34,11 +41,7 @@ protocol HomeInteractorToPresenterProtocol: class {
     func homeViewLoading()
 }
 
-protocol HomePresenterToViewProtocol {
-    func showNews(news: ContactResult)
-    func showError(errorName: String, statusCode: Int)
-    func hideHud()
-}
+
 
 
 

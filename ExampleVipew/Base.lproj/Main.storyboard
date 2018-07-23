@@ -50,11 +50,20 @@
                                     <constraint firstItem="Vrr-Wu-RHR" firstAttribute="centerX" secondItem="x1p-Pm-npD" secondAttribute="centerX" id="wTb-oX-GOX"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F33-0n-Q7c">
+                                <rect key="frame" x="165" y="378" width="44" height="30"/>
+                                <state key="normal" title="Profile"/>
+                                <connections>
+                                    <action selector="btnProfileTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pka-cy-411"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wOZ-Og-jKv" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NMI-Dk-Lzl"/>
+                            <constraint firstItem="F33-0n-Q7c" firstAttribute="top" secondItem="wOZ-Og-jKv" secondAttribute="bottom" constant="19.5" id="R9h-4U-bEm"/>
                             <constraint firstItem="x1p-Pm-npD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="XCq-Bi-GUu"/>
+                            <constraint firstItem="F33-0n-Q7c" firstAttribute="centerX" secondItem="wOZ-Og-jKv" secondAttribute="centerX" id="vDP-PY-Kxw"/>
                             <constraint firstItem="x1p-Pm-npD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="vsL-3W-du3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x1p-Pm-npD" secondAttribute="trailing" id="wHK-cV-yWV"/>
                             <constraint firstItem="wOZ-Og-jKv" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="xcp-vY-HyR"/>

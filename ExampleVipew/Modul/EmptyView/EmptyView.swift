@@ -10,7 +10,9 @@ import UIKit
 
 class EmptyView: UIView {
 
+    @IBOutlet weak var lblEmptyView: UILabel!
     @IBOutlet weak var view: UIView!
+    @IBOutlet weak var btnRetry: UIButton!
     let nibName = "EmptyView"
     
     required init?(coder aDecoder: NSCoder) {
